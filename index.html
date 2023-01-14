@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Daily-UI-011</title>
+  </head>
+  <body>
+    <div class="content">
+        <p>Selected the boxes and see the 2 different outcomes.</p>
+      <form id="myForm" onsubmit="checkAllChecked(event)">
+        <div class="outocmes">
+            <div class="check_input">
+            <input type="checkbox" id="checkbox1" class="check" />
+            <p>Checkbox 1</p>
+          </div>
+          <br />
+          <div class="check_input">
+            <input type="checkbox" id="checkbox2" class="check" />
+            <p>Checkbox 2</p>
+          </div></div>
+        
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+      <br />
+    </div>
+    <div class="open-btn">
+      <a href="#" id="open-noo">OH NOO!</a>
+      <a href="#" id="open-yes">CONTINUE!</a>
+    </div>
+    <div id="modal">
+        <i class="fa-regular fa-thumbs-down"></i>
+      <h2 class="hade-h">Error<h2>
+      <p class="text-p">You have found the wrong outcome.</p>
+      <a href="#" id="closes">Try Agian</a>
+    </div>
+    <div id="modal2">
+        <i class="fa-regular fa-thumbs-up"></i>
+        <h2 class="hade-h">Congratulations</h2>
+        <p class="text-p">You have found the right outcome.</p>
+        <a href="#" id="closes2">Try Agian</a>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/eb49e3ed3b.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</html>
